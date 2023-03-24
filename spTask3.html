@@ -22,13 +22,11 @@
          <label>Insert money:</label>
          <br>
          <input type="number" id="amount">
-         <select id="variant">
-            <option value="KZT">KZT</option>
+         <select id="variant" onchange="convert()">
+            <option value="KZT" selected="selected">KZT</option>
             <option value="USD">USD</option>
             <option value="EUR">EUR</option>
          </select>
-         <br><br>
-         <button onclick="convert()">Convert</button>
       </div>
       <div>
          <label><b>KZT(tenge)</b></label>
