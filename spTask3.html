@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Strint Task3</title>
+	<script type="text/javascript" src="spTask.js"></script>
+   <style>
+      #content{
+         display: flex;
+         justify-content: space-around;
+         border: 1px solid;
+         border-radius: 5px;
+         padding: 10px;
+      }
+      .bcc{
+         background-color: lightgray;
+      }
+   </style>
+</head>
+<body>
+	<div id="content">
+      <div>
+         <label>Insert money:</label>
+         <br>
+         <input type="number" id="amount">
+         <select id="variant">
+            <option value="KZT">KZT</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+         </select>
+         <br><br>
+         <button onclick="convert()">Convert</button>
+      </div>
+      <div>
+         <label><b>KZT(tenge)</b></label>
+         <br>
+         <input type="text" class="bcc" id="kzt">
+      </div>
+      <div>
+         <label><b>USD(dollar)</b></label>
+         <br>
+         <input type="text" class="bcc" id="usd">
+      </div>
+      <div>
+         <label><b>EUR(euro)</b></label>
+         <br>
+         <input type="text" class="bcc" id="eur">
+      </div>
+   </div>
+</body>
+</html>
